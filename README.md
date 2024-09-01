@@ -12,7 +12,7 @@ Check out my portfolio to see my work and get in touch:
 
 [Visit My Portfolio](https://ursinasanderink.com)
 
-![Portfolio Screenshot](https://user-images.githubusercontent.com/70171925/170053429-e124179c-3773-4456-abc0-47b8c9235988.png)
+![Portfolio](https://www.notion.so/hi-ursina-here-4d5ae40cc2274fc8929fe0a2a6915275)
 
 ## Technologies Used
 
