@@ -12,7 +12,7 @@ Check out my portfolio to see my work and get in touch:
 
 [Visit My Portfolio](https://ursinasanderink.com)
 
-![Portfolio](https://www.notion.so/hi-ursina-here-4d5ae40cc2274fc8929fe0a2a6915275)
+[Portfolio](https://www.notion.so/hi-ursina-here-4d5ae40cc2274fc8929fe0a2a6915275)
 
 ## Technologies Used
 
@@ -26,7 +26,7 @@ Check out my portfolio to see my work and get in touch:
 Feel free to reach out if you want to collaborate or have any inquiries:
 
 - **Email**: [sanderink.ursina@yahoo.com](mailto:sanderink.ursina@yahoo.com)
-- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/ursina-sanderink/)
+- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/ursinasanderink/)
 - **GitHub**: [GitHub Profile](https://github.com/sinsasanderink)
 
 Thank you for visiting my portfolio!
