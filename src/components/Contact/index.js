@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
@@ -24,14 +23,13 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        process.env.REACT_APP_EMIAL_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        'service_ma8xguz',
+        'template_yeng5xd',
         form.current,
-        process.env.REACT_APP_PUBLIC_KEY
+        'kh9VYUFo_pxNZVXPW'
       )
       .then(
         () => {
-          // alert('Message successfully sent!')
           toast.success('Message successfully sent!', {
             position: 'bottom-center',
             autoClose: 3500,
@@ -42,14 +40,9 @@ const Contact = () => {
             progress: undefined,
             theme: 'dark',
           })
-          const timeout = setTimeout(() => {
-            window.location.reload(false)
-          }, 3900)
-
-          return () => clearTimeout(timeout)
+          form.current.reset()
         },
         () => {
-          // alert('Failed to send the message, please try again')
           toast.error('Failed to send the message, please try again', {
             position: 'bottom-center',
             autoClose: 3500,
@@ -76,9 +69,7 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in opportunities - especially ambitious or large
-            projects. However, if you have other request or question, don't
-            hesitate to contact me using below form either.
+          I'm seeking opportunities as a Machine Learning Engineer or Software Engineer, particularly in projects that are ambitious or innovative. If you have other inquiries or requests, feel free to reach out using the form below.
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -116,22 +107,6 @@ const Contact = () => {
               <ToastContainer />
             </form>
           </div>
-        </div>
-        <div className="info-map">
-          Sudip Banerjee
-          <br />
-          Kolkata, <br />
-          West Bengal, <br />
-          India
-          <br />
-        </div>
-        <div className="map-wrap">
-          <MapContainer center={[22.56263, 88.36304]} zoom={13}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[22.56263, 88.36304]}>
-              <Popup>Sudip lives here, come over for a cup of coffee :)</Popup>
-            </Marker>
-          </MapContainer>
         </div>
       </div>
       <Loader type="pacman" />

@@ -29,14 +29,20 @@ const Skills = () => {
             <br />
           </h1>
           <p>
-            I love to keep a variety of tools in my tech stack. I also make sure
-            to be pro at using one tool before moving on to the next. I keep
-            myself up to date with the latest technologies around.
+            I love to keep a variety of tools in my tech stack. I stay at the forefront of AI and ML advancements, constantly updating my skill set to include the latest innovations.
           </p>
           <p>
-            Looking for a role in a company with the opportunity to work with
-            the latest technologies on challenging and diverse projects.
+            I'm seeking a role that allows me to apply cutting-edge AI and ML technologies in challenging, impactful projects, contributing to groundbreaking solutions in a forward-thinking company.
           </p>
+          
+          <a
+            href="https://www.notion.so/hi-ursina-here-4d5ae40cc2274fc8929fe0a2a6915275"
+            className="portfolio-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            PORTFOLIO
+          </a>
         </div>
 
         <div className="tagcloud-wrap">

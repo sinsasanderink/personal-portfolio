@@ -2,16 +2,15 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-import LogoTitle from '../../assets/images/logo-s.png'
 import Logo from './Logo'
 import './index.scss'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray = 'udip'.split('')
-  const jobArray = 'Blockchain Developer'.split('')
-  const interestArray = 'Ethical Hacker'.split('')
+  const nameArray = ' Sina'.split('')
+  const jobArray = 'Software Engineer'.split('')
+  const interestArray = 'MSc AI & ML'.split('')
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -30,7 +29,8 @@ const Home = () => {
             <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m</span>
-            <img src={LogoTitle} alt="Sudip Banerjee" />
+            {/* Remove or comment out the following line to remove the "S" */}
+            {/* <img src={LogoTitle} alt="Ursina Sanderink" /> */}
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
@@ -50,7 +50,7 @@ const Home = () => {
             />
           </h1>
           <h2>
-            Full Stack Blockchain Developer / Ethical Hacker / AI/ML Developer
+            Machine Learning | Agent Frameworks, RAG | Software Dev
           </h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME

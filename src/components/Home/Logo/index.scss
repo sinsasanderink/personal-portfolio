@@ -1,8 +1,9 @@
 .logo-container {
   z-index: 0;
-  width: 400px;
-  height: 609px;
-  opacity: 1;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  opacity: 0;
   position: absolute;
   top: 0;
   right: 15%;
@@ -16,19 +17,20 @@
     width: 100%;
     height: auto;
     bottom: 0;
-    transform: rotateZ(30deg) !important;
+    transform: none;
   }
 
   .solid-logo {
     position: absolute;
-    top: auto;
-    right: auto;
-    bottom: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
     margin: auto;
     width: 100%;
+    height: auto;
     opacity: 1;
-    transform: rotateZ(30deg) !important;
+    transform: none;
     z-index: 1;
   }
 }
@@ -36,4 +38,32 @@
 .svg-container {
   stroke: #ffd700;
   stroke-width: 10;
+}
+
+// Media queries for responsiveness
+@media screen and (max-width: 1200px) {
+  .logo-container {
+    right: 0;
+    left: 0;
+    margin: auto;
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo-container {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    margin: 50px auto;
+    top: 50px;  /* Added for better positioning on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo-container {
+    max-width: 280px;
+    margin: 20px auto;
+    top: 30px;  /* Adjusts positioning for very small screens */
+  }
 }
