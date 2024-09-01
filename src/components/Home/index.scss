@@ -1,16 +1,16 @@
 .home-page {
   .text-zone {
-    position: absolute;
-    left: 10%;
+    position: relative;
+    left: 20%; // Increased left margin to create space from the sidebar
     top: 50%;
     transform: translateY(-50%);
-    width: 40%;
+    width: 70%; // Reduced width to prevent overlap with sidebar
     max-height: 90%;
 
     h1 {
       color: #fff;
-      font-size: 56px;
-      line-height: 63px;
+      font-size: 48px; // Default font size for larger screens
+      line-height: 54px;
       margin: 0;
       font-family: 'Coolvetica';
       font-weight: 400;
@@ -19,10 +19,10 @@
         content: '<h1>';
         font-family: 'La Belle Aurore', cursive;
         color: #00ff7f;
-        font-size: 18px;
+        font-size: 16px;
         position: absolute;
-        margin-top: -40px;
-        left: -15px;
+        margin-top: -35px;
+        left: -12px;
         opacity: 0.9;
       }
 
@@ -30,19 +30,19 @@
         content: '<h1/>';
         font-family: 'La Belle Aurore', cursive;
         color: #00ff7f;
-        font-size: 18px;
+        font-size: 16px;
         position: absolute;
-        margin-top: 18px;
-        margin-left: 20px;
+        margin-top: 15px;
+        margin-left: 18px;
         animation: fadeIn 1s 1.7s backwards;
         opacity: 0.9;
       }
     }
 
     img {
-      margin-left: 20px;
+      margin-left: 15px;
       opacity: 0;
-      width: 32px;
+      width: 28px;
       height: auto;
       animation: rotateIn 1s linear both;
       animation-delay: 1.4s;
@@ -51,9 +51,9 @@
 
   h2 {
     color: #8d8d8d;
-    margin-top: 20px;
+    margin-top: 15px;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 10px;
     font-family: sans-serif;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
@@ -61,14 +61,14 @@
 
   .flat-button {
     color: #00ff7f;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 400;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     font-family: sans-serif;
     text-decoration: none;
-    padding: 10px 18px;
+    padding: 8px 16px;
     border: 1px solid #00ff7f;
-    margin-top: 25px;
+    margin-top: 20px;
     float: left;
     animation: fadeInAnimation 1s 1.8s backwards;
     white-space: nowrap;
@@ -77,6 +77,46 @@
     &:hover {
       background: #00ff7f;
       color: rgb(0, 0, 0);
+    }
+  }
+
+  // Media Queries for Responsiveness
+  @media screen and (max-width: 768px) {
+    .text-zone {
+      width: 80%; // Adjusted width for tablets
+      left: 15%; // Adjusted left margin for tablets to maintain spacing from sidebar
+      top: 45%;
+    }
+
+    h1 {
+      font-size: 36px; // Reduced font size for tablets
+      line-height: 42px;
+    }
+
+    h2 {
+      font-size: 9px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .text-zone {
+      width: 90%; // Maximize usage of screen space on mobile
+      left: 10%; // Adjusted left margin for mobile to maintain spacing from sidebar
+      top: 40%;
+    }
+
+    h1 {
+      font-size: 28px; // Further reduced font size for mobile
+      line-height: 34px;
+    }
+
+    h2 {
+      font-size: 8px;
+    }
+
+    .flat-button {
+      padding: 6px 12px;
+      font-size: 11px;
     }
   }
 }

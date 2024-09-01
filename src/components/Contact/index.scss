@@ -1,6 +1,7 @@
 .contact-form {
   width: 100%;
   margin-top: 20px;
+  margin-left: 20%; // Added margin to create space from the sidebar
 
   ul {
     padding: 0;
@@ -43,6 +44,16 @@
     color: #fff;
     padding: 0 20px;
     box-sizing: border-box;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px; // Reduce font size for tablets
+      height: 45px; // Adjust height for smaller screens
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 12px; // Further reduce font size for mobile
+      height: 40px; // Further adjust height for mobile
+    }
   }
 
   textarea {
@@ -55,6 +66,16 @@
     padding: 20px;
     box-sizing: border-box;
     min-height: 150px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px; // Reduce font size for tablets
+      padding: 15px; // Adjust padding for smaller screens
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 12px; // Further reduce font size for mobile
+      padding: 10px; // Further adjust padding for mobile
+    }
   }
 
   .flat-button {
@@ -77,6 +98,16 @@
       background-color: #ff4500;
       color: #000;
     }
+
+    @media screen and (max-width: 768px) {
+      font-size: 10px; // Slightly reduce font size for tablets
+      padding: 7px 9px; // Adjust padding for smaller screens
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 9px; // Further reduce font size for mobile
+      padding: 6px 8px; // Further adjust padding for mobile
+    }
   }
 }
 
@@ -86,6 +117,17 @@
   width: 53%;
   height: 115%;
   margin-top: -3%;
+  margin-left: 20%; // Added margin to create space from the sidebar
+
+  @media screen and (max-width: 768px) {
+    width: 60%; // Adjust width for tablets
+    margin-left: 15%; // Adjust margin for tablets
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 80%; // Adjust width for mobile
+    margin-left: 10%; // Adjust margin for mobile
+  }
 }
 
 .leaflet-container {
@@ -114,11 +156,28 @@
   animation: fadeIn 1s 1.5s;
   animation-fill-mode: forwards;
 
+  @media screen and (max-width: 768px) {
+    font-size: 15px; // Reduce font size for tablets
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 13px; // Further reduce font size for mobile
+    right: 20%; // Adjust position for mobile screens
+  }
+
   span {
     font-size: 16px;
 
     span {
       color: #ffd700;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px; // Reduce font size for tablets
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 12px; // Further reduce font size for mobile
     }
   }
 }
