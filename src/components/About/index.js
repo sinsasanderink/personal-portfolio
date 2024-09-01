@@ -27,14 +27,14 @@ const About = () => {
             I'm currently pursuing an MSc in AI & ML. I'm passionate about agent frameworks and enjoy reading research papers on the latest AI breakthroughs in my free time.
           </p>
           <p>
-            I'm a Machine Learning Engineer skilled in Python and popular libraries like TensorFlow, PyTorch, scikit-learn, and Keras. I work with both traditional ML techniques and the latest AI innovations, RAG) and agent frameworks.
+            I'm a Machine Learning Engineer skilled in Python and popular libraries like TensorFlow, PyTorch, scikit-learn, and Keras. I work with both traditional ML techniques and the latest AI innovations, RAG and agent frameworks.
           </p>
           <p>
-            I'm deeply interested in the intersection of AI and automation, constantly exploring ways to optimize and innovate. In one sentence, I'd describe myself as a research enthusiast and tech-driven problem solver.
+            I'm deeply interested in the intersection of AI and automation, constantly exploring ways to optimize and innovate. 
           </p>
           <p>I am a life-long learner.</p>
           <p>
-            In one sentence, I'm a tech-driven innovator passionate about finding cutting-edge research and transforming it into real-world AI applications.
+            In one sentence, I'd describe myself as a tech-driven innovator passionate about finding cutting-edge research and transforming it into real-world AI applications.
           </p>
           <a href="https://docs.google.com/document/d/10GQDuKuGJauyzpS3Ct0QpOQ3_Kyx7hZkxzySTw3LevU/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="portfolio-button">
             CV
