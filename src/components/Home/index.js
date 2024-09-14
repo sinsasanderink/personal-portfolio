@@ -52,9 +52,9 @@ const Home = () => {
           <h2>
             Machine Learning | Agent Frameworks, RAG | Software Dev
           </h2>
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
+          <a href="https://sinasanderink.notion.site/Hi-Ursina-here-4d5ae40cc2274fc8929fe0a2a6915275" className="flat-button" target="_blank" rel="noopener noreferrer">
+            PORTFOLIO
+          </a>
         </div>
         <Logo />
       </div>
